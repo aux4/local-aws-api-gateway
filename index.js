@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 8080;
   }
 
   if (!mappingPath.startsWith("/")) {
-    mappingPath = path.join(process.resolve("."), mappingPath);
+    mappingPath = path.join(path.resolve("."), mappingPath);
   }
 
   const { REST_MAPPINGS, WS_MAPPINGS } = await import(mappingPath);
