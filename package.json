@@ -1,8 +1,8 @@
 {
   "name": "local-aws-api-gateway",
   "type": "module",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Local AWS API Gateway - Supports REST and WS",
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
@@ -14,6 +14,11 @@
   },
   "author": "Aux4",
   "license": "Apache-2.0",
+  "homepage": "https://github.com/aux4/local-aws-api-gateway.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aux4/local-aws-api-gateway.git"
+  },
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
