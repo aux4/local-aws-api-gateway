@@ -7,7 +7,8 @@ import cors from "cors";
 import { createLocalWebSocketAPI } from "./lib/LocalWebSocketAPI.js";
 import { createLocalRestAPI } from "./lib/LocalRestAPI.js";
 
-dotenv.config();
+const currentPath = path.resolve(".");
+dotenv.config({ path: path.join(currentPath, ".env") });
 
 const PORT = process.env.PORT || 8080;
 
@@ -18,7 +19,7 @@ const PORT = process.env.PORT || 8080;
   }
 
   if (!mappingPath.startsWith("/")) {
-    mappingPath = path.join(path.resolve("."), mappingPath);
+    mappingPath = path.join(currentPath, mappingPath);
   }
 
   const { REST_MAPPINGS, WS_MAPPINGS } = await import(mappingPath);
