@@ -1,7 +1,7 @@
 {
   "name": "local-aws-api-gateway",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Local AWS API Gateway - Supports REST and WS",
   "main": "index.js",
   "preferGlobal": true,
